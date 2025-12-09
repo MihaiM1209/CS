@@ -1,0 +1,5 @@
+{
+    "python.terminal.executeInFileDir": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.preserveFocus": false
+}

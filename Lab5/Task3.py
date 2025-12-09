@@ -218,7 +218,7 @@ def main():
     print("- Secret numbers a and b chosen randomly according to algorithm requirements")
 
 
-    message_text = "Nume Prenume"
+    message_text = "Mustea Mihai"
     message_bytes = message_text.encode('utf-8')
 
     print(f"\nOriginal message: '{message_text}'")

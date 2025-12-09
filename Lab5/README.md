@@ -26,7 +26,7 @@ pip install pycryptodome
 ```
 
 ### Common Parameters
-- **Message**: `"Nume Prenume"` (encrypted/decrypted in all tasks)
+- **Message**: `"Mustea Mihai"` (encrypted/decrypted in all tasks)
 - **Message Encoding**: ASCII → Hexadecimal → Decimal
 - **Key Size**: 2048 bits minimum (RSA), 2048-bit prime modulus (ElGamal, DH)
 
@@ -232,7 +232,7 @@ This works because during key generation: `e × d ≡ 1 (mod φ(n))`, so `m^(ed)
 **Encoding Process**:
 ```
 Text → ASCII bytes → Hexadecimal → Decimal
-"Nume Prenume" → [78, 117, 109, 101, 32, 80, ...] → "4e756d652050..." → (large decimal number)
+"Mustea Mihai" → [77, 117, 115, 116, 101, 97, 32, 77, 105, 104, 97, 105] → "4d7573746561204d69686169" → (large decimal number)
 ```
 
 **Why This Conversion?**
@@ -242,7 +242,7 @@ Text → ASCII bytes → Hexadecimal → Decimal
 - Hexadecimal is an intermediate representation
 - Decimal is the final numeric format for RSA operations
 
-**Limitations**: The message (as decimal) must be smaller than the modulus `n`. For "Nume Prenume" with 2048-bit keys, this is easily satisfied.
+**Limitations**: The message (as decimal) must be smaller than the modulus `n`. For "Mustea Mihai" with 2048-bit keys, this is easily satisfied.
 
 ---
 

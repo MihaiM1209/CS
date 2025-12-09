@@ -165,11 +165,11 @@ def main():
     print("=" * 80)
     print("Requirements:")
     print("- Generate RSA keys with n >= 2048 bits")
-    print("- Encrypt and decrypt message: m = 'Nume Prenume'")
+    print("- Encrypt and decrypt message: m = 'Mustea Mihai'")
     print("- Message encoding: ASCII → Hexadecimal → Decimal")
 
 
-    message_text = "Nume Prenume"
+    message_text = "Mustea Mihai"
 
     print(f"\nOriginal message: '{message_text}'")
 
